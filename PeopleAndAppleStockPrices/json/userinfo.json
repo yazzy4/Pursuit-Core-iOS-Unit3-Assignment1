@@ -7198,7 +7198,7 @@
       "medium": "https://randomuser.me/api/portraits/med/men/2.jpg",
       "thumbnail": "https://randomuser.me/api/portraits/thumb/men/2.jpg"
     },
-    "nat": "GB"
+    "nat": "GB" 
   }],
   "info": {
     "seed": "e1d74555b3b9fd79",

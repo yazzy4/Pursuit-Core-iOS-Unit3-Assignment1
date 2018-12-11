@@ -10,12 +10,16 @@ import Foundation
 
 struct Person: Codable {
     struct UserInfo: Codable {
-        var results: Person
+        var results: [Person]
     }
     
     struct NameInfo: Codable {
         var first: String
         var last: String
+        public var fullName: String {
+            return first.capitalized + " " + last.capitalized
+        }
+
     }
     
     struct Places: Codable {
@@ -23,12 +27,13 @@ struct Person: Codable {
         var state: String
     }
     struct UserImage: Codable{
-        var picture: URL
+        var large: String
     }
 
+    
     var name: NameInfo
     var location: Places
     var email: String
-    var picture: UserImage
+    var picture : UserImage
     
     }

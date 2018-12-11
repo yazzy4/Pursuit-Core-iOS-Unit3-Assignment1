@@ -19,8 +19,6 @@
 		913EA2F121BB2C9B006382E0 /* PeopleDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913EA2F021BB2C9B006382E0 /* PeopleDetailController.swift */; };
 		913EA2F321BB2CDE006382E0 /* StockDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913EA2F221BB2CDE006382E0 /* StockDetailController.swift */; };
 		913EA2F521BB2D00006382E0 /* StockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913EA2F421BB2D00006382E0 /* StockViewController.swift */; };
-		913EA35921BF1EC1006382E0 /* StockPricesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913EA35821BF1EC1006382E0 /* StockPricesAPI.swift */; };
-		913EA35B21BF1ED4006382E0 /* PeopleAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913EA35A21BF1ED4006382E0 /* PeopleAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,8 +36,6 @@
 		913EA2F021BB2C9B006382E0 /* PeopleDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleDetailController.swift; sourceTree = "<group>"; };
 		913EA2F221BB2CDE006382E0 /* StockDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailController.swift; sourceTree = "<group>"; };
 		913EA2F421BB2D00006382E0 /* StockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockViewController.swift; sourceTree = "<group>"; };
-		913EA35821BF1EC1006382E0 /* StockPricesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockPricesAPI.swift; sourceTree = "<group>"; };
-		913EA35A21BF1ED4006382E0 /* PeopleAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,9 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				913EA2EC21BB2641006382E0 /* StockPrices .swift */,
-				913EA35821BF1EC1006382E0 /* StockPricesAPI.swift */,
 				913EA2EA21BB262D006382E0 /* People.swift */,
-				913EA35A21BF1ED4006382E0 /* PeopleAPI.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -199,8 +193,6 @@
 				913EA2F121BB2C9B006382E0 /* PeopleDetailController.swift in Sources */,
 				913EA2F521BB2D00006382E0 /* StockViewController.swift in Sources */,
 				913EA2F321BB2CDE006382E0 /* StockDetailController.swift in Sources */,
-				913EA35B21BF1ED4006382E0 /* PeopleAPI.swift in Sources */,
-				913EA35921BF1EC1006382E0 /* StockPricesAPI.swift in Sources */,
 				577E5BEE21BA8BA10083EB97 /* PeopleViewController.swift in Sources */,
 				913EA2EB21BB262D006382E0 /* People.swift in Sources */,
 				577E5BEC21BA8BA10083EB97 /* AppDelegate.swift in Sources */,
