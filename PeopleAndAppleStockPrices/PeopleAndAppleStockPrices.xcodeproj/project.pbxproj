@@ -8,24 +8,38 @@
 
 /* Begin PBXBuildFile section */
 		577E5BEC21BA8BA10083EB97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577E5BEB21BA8BA10083EB97 /* AppDelegate.swift */; };
-		577E5BEE21BA8BA10083EB97 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577E5BED21BA8BA10083EB97 /* ViewController.swift */; };
+		577E5BEE21BA8BA10083EB97 /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577E5BED21BA8BA10083EB97 /* PeopleViewController.swift */; };
 		577E5BF121BA8BA10083EB97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 577E5BEF21BA8BA10083EB97 /* Main.storyboard */; };
 		577E5BF321BA8BA20083EB97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 577E5BF221BA8BA20083EB97 /* Assets.xcassets */; };
 		577E5BF621BA8BA20083EB97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 577E5BF421BA8BA20083EB97 /* LaunchScreen.storyboard */; };
 		577E5BFF21BA8C3B0083EB97 /* userinfo.json in Resources */ = {isa = PBXBuildFile; fileRef = 577E5BFE21BA8C3B0083EB97 /* userinfo.json */; };
 		577E5C0121BA8C5C0083EB97 /* applstockinfo.json in Resources */ = {isa = PBXBuildFile; fileRef = 577E5C0021BA8C5C0083EB97 /* applstockinfo.json */; };
+		913EA2EB21BB262D006382E0 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913EA2EA21BB262D006382E0 /* People.swift */; };
+		913EA2ED21BB2641006382E0 /* StockPrices .swift in Sources */ = {isa = PBXBuildFile; fileRef = 913EA2EC21BB2641006382E0 /* StockPrices .swift */; };
+		913EA2F121BB2C9B006382E0 /* PeopleDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913EA2F021BB2C9B006382E0 /* PeopleDetailController.swift */; };
+		913EA2F321BB2CDE006382E0 /* StockDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913EA2F221BB2CDE006382E0 /* StockDetailController.swift */; };
+		913EA2F521BB2D00006382E0 /* StockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913EA2F421BB2D00006382E0 /* StockViewController.swift */; };
+		913EA35921BF1EC1006382E0 /* StockPricesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913EA35821BF1EC1006382E0 /* StockPricesAPI.swift */; };
+		913EA35B21BF1ED4006382E0 /* PeopleAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913EA35A21BF1ED4006382E0 /* PeopleAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		577E5BE821BA8BA10083EB97 /* PeopleAndAppleStockPrices.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeopleAndAppleStockPrices.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		577E5BEB21BA8BA10083EB97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		577E5BED21BA8BA10083EB97 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		577E5BED21BA8BA10083EB97 /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
 		577E5BF021BA8BA10083EB97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		577E5BF221BA8BA20083EB97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		577E5BF521BA8BA20083EB97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		577E5BF721BA8BA20083EB97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		577E5BFE21BA8C3B0083EB97 /* userinfo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = userinfo.json; sourceTree = "<group>"; };
 		577E5C0021BA8C5C0083EB97 /* applstockinfo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = applstockinfo.json; sourceTree = "<group>"; };
+		913EA2EA21BB262D006382E0 /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
+		913EA2EC21BB2641006382E0 /* StockPrices .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StockPrices .swift"; sourceTree = "<group>"; };
+		913EA2F021BB2C9B006382E0 /* PeopleDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleDetailController.swift; sourceTree = "<group>"; };
+		913EA2F221BB2CDE006382E0 /* StockDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailController.swift; sourceTree = "<group>"; };
+		913EA2F421BB2D00006382E0 /* StockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockViewController.swift; sourceTree = "<group>"; };
+		913EA35821BF1EC1006382E0 /* StockPricesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockPricesAPI.swift; sourceTree = "<group>"; };
+		913EA35A21BF1ED4006382E0 /* PeopleAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +56,9 @@
 		577E5BDF21BA8BA10083EB97 = {
 			isa = PBXGroup;
 			children = (
+				577E5C0221BA8C620083EB97 /* json */,
+				913EA2EE21BB264D006382E0 /* Models */,
+				913EA2EF21BB26B2006382E0 /* Controllers */,
 				577E5BEA21BA8BA10083EB97 /* PeopleAndAppleStockPrices */,
 				577E5BE921BA8BA10083EB97 /* Products */,
 			);
@@ -58,8 +75,6 @@
 		577E5BEA21BA8BA10083EB97 /* PeopleAndAppleStockPrices */ = {
 			isa = PBXGroup;
 			children = (
-				577E5BED21BA8BA10083EB97 /* ViewController.swift */,
-				577E5BEF21BA8BA10083EB97 /* Main.storyboard */,
 				577E5BFD21BA8BE20083EB97 /* Supporting Files */,
 				577E5BF721BA8BA20083EB97 /* Info.plist */,
 			);
@@ -69,7 +84,6 @@
 		577E5BFD21BA8BE20083EB97 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				577E5C0221BA8C620083EB97 /* json */,
 				577E5BEB21BA8BA10083EB97 /* AppDelegate.swift */,
 				577E5BF221BA8BA20083EB97 /* Assets.xcassets */,
 				577E5BF421BA8BA20083EB97 /* LaunchScreen.storyboard */,
@@ -84,6 +98,29 @@
 				577E5C0021BA8C5C0083EB97 /* applstockinfo.json */,
 			);
 			path = json;
+			sourceTree = "<group>";
+		};
+		913EA2EE21BB264D006382E0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				913EA2EC21BB2641006382E0 /* StockPrices .swift */,
+				913EA35821BF1EC1006382E0 /* StockPricesAPI.swift */,
+				913EA2EA21BB262D006382E0 /* People.swift */,
+				913EA35A21BF1ED4006382E0 /* PeopleAPI.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		913EA2EF21BB26B2006382E0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				577E5BED21BA8BA10083EB97 /* PeopleViewController.swift */,
+				913EA2F021BB2C9B006382E0 /* PeopleDetailController.swift */,
+				577E5BEF21BA8BA10083EB97 /* Main.storyboard */,
+				913EA2F421BB2D00006382E0 /* StockViewController.swift */,
+				913EA2F221BB2CDE006382E0 /* StockDetailController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,8 +196,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				577E5BEE21BA8BA10083EB97 /* ViewController.swift in Sources */,
+				913EA2F121BB2C9B006382E0 /* PeopleDetailController.swift in Sources */,
+				913EA2F521BB2D00006382E0 /* StockViewController.swift in Sources */,
+				913EA2F321BB2CDE006382E0 /* StockDetailController.swift in Sources */,
+				913EA35B21BF1ED4006382E0 /* PeopleAPI.swift in Sources */,
+				913EA35921BF1EC1006382E0 /* StockPricesAPI.swift in Sources */,
+				577E5BEE21BA8BA10083EB97 /* PeopleViewController.swift in Sources */,
+				913EA2EB21BB262D006382E0 /* People.swift in Sources */,
 				577E5BEC21BA8BA10083EB97 /* AppDelegate.swift in Sources */,
+				913EA2ED21BB2641006382E0 /* StockPrices .swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
