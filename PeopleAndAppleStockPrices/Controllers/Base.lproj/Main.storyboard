@@ -113,6 +113,9 @@
                         <viewLayoutGuide key="safeArea" id="gEd-qk-O2A"/>
                     </view>
                     <navigationItem key="navigationItem" id="YIx-S0-1jQ"/>
+                    <connections>
+                        <outlet property="stockTableView" destination="U4s-tg-Ea0" id="MsG-bh-b59"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OMH-ad-PS8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -243,7 +246,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="YiQ-Ka-T9D" kind="relationship" relationship="rootViewController" id="r29-xx-7k6"/>
+                        <segue destination="YiQ-Ka-T9D" kind="relationship" relationship="rootViewController" id="Pin-bC-keA"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jNT-vp-BPA" userLabel="First Responder" sceneMemberID="firstResponder"/>

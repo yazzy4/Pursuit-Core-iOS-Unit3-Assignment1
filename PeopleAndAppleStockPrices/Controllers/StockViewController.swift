@@ -10,21 +10,57 @@ import UIKit
 
 class StockViewController: UIViewController {
 
+    var stocks = [StockPrice]()
+    
+    
+    @IBOutlet weak var stockTableView: UITableView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        stockTableView.dataSource = self
+        stocks = loadData()
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func loadData() ->[StockPrice] {
+        var stocks = [StockPrice]()
+        guard let path = Bundle.main.path(forResource: "applstockinfo", ofType: "json") else {
+            print("path not valid")
+            return stocks
+        }
+        
+        guard let data = FileManager.default.contents(atPath: path) else {
+            print("contents not found at path: \(path)")
+            return stocks
+        }
+        
+        do {
+            stocks = try JSONDecoder().decode([StockPrice].self,from: data)
+            print("\(stocks.count)")
+        } catch {
+            print("decoding error: \(error)")
+        }
+        return stocks
     }
-    */
+        
+        
+        
 
+    
+}
+
+extension StockViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection: Int) -> Int {
+        return stocks.count
+        
+        }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = stockTableView.dequeueReusableCell(withIdentifier: "StockCell", for: indexPath)
+        let stockToSet = stocks[indexPath.row]
+            cell.textLabel?.text = stockToSet.date
+            return cell
+    }
+    
 }

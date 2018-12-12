@@ -1,22 +1,26 @@
+////
+////  StockPrices .swift
+////  PeopleAndAppleStockPrices
+////
+////  Created by Yaz Burrell on 12/7/18.
+////  Copyright © 2018 Pursuit. All rights reserved.
+////
 //
-//  StockPrices .swift
-//  PeopleAndAppleStockPrices
+//import Foundation
 //
-//  Created by Yaz Burrell on 12/7/18.
-//  Copyright © 2018 Pursuit. All rights reserved.
-//
-
-import Foundation
-
-struct StockInfo: Codable {
-    var date: String
-    var open: Int
-    var high: Int
-    var low: Int
-    var close: Int
+////struct StockInfo: Codable {
+////    var date: String
+////    var open: Int
+////    var high: Int
+////    var low: Int
+////    var close: Int
+////}
+struct StockPrice: Codable {
+    let date: String
+    let open: Double
+    let close: Double
 }
-//
-//
+
 //let stockPrice1 = StockPrice(date: "2016-10-09", open: 145.0, close: 145.50)
 //let stockPrice2 = StockPrice(date: "2016-10-10", open: 145.0, close: 145.50)
 //let stockPrice3 = StockPrice(date: "2016-11-12", open: 145.0, close: 145.50)
@@ -53,11 +57,11 @@ struct StockInfo: Codable {
 //    let dateMonth = getDateMonth(dateString: stockPrice.date)
 //    let currentDate = dateMonth.month + "-" + dateMonth.year
 //    if previousDate.isEmpty { previousDate = dateMonth.month + "-" + dateMonth.year }
-//    
+//
 //    if currentDate != previousDate {
 //        // new bucket
 //        stockPrices.append([StockPrice]())
-//        
+//
 //        // increment startIndex
 //        startIndex += 1
 //    }
