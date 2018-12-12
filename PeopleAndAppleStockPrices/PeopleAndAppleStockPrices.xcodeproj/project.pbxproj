@@ -52,7 +52,6 @@
 		577E5BDF21BA8BA10083EB97 = {
 			isa = PBXGroup;
 			children = (
-				577E5C0221BA8C620083EB97 /* json */,
 				913EA2EE21BB264D006382E0 /* Models */,
 				913EA2EF21BB26B2006382E0 /* Controllers */,
 				577E5BEA21BA8BA10083EB97 /* PeopleAndAppleStockPrices */,
@@ -72,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				577E5BFD21BA8BE20083EB97 /* Supporting Files */,
+				577E5C0221BA8C620083EB97 /* json */,
 				577E5BF721BA8BA20083EB97 /* Info.plist */,
 			);
 			path = PeopleAndAppleStockPrices;

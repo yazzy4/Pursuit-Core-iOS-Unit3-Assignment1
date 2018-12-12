@@ -14,12 +14,19 @@ class PeopleDetailController: UIViewController {
     @IBOutlet weak var contactName: UILabel!
     @IBOutlet weak var contactEmail: UILabel!
     @IBOutlet weak var contactLocation: UILabel!
-    var people = [Person]()
+    
+    public var user: Person?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        updateUI()
        
+    }
+   
+    private func updateUI() {
+        contactName.text = user?.name.fullName
+        contactEmail.text = user?.email
+        contactLocation.text = user?.location.city.uppercased()
     }
     
 

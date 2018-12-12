@@ -70,6 +70,7 @@
                     <navigationItem key="navigationItem" id="Sx7-cW-X7Q"/>
                     <connections>
                         <outlet property="peopleTableView" destination="hxI-FC-ahl" id="Z8K-NJ-sI5"/>
+                        <outlet property="searchBar" destination="bWe-M4-mW3" id="P9H-am-dcJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -182,9 +183,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="mug-ev-IoI"/>
                     <connections>
-                        <outlet property="contactEmail" destination="upt-hH-xYb" id="fN6-d2-HTs"/>
-                        <outlet property="contactLabel" destination="g1j-EW-MyJ" id="hdO-DJ-CE2"/>
+                        <outlet property="contactEmail" destination="upt-hH-xYb" id="mdP-Yg-1MA"/>
                         <outlet property="contactLocation" destination="uY7-bJ-dzR" id="7GB-PN-q3c"/>
+                        <outlet property="contactName" destination="g1j-EW-MyJ" id="XfQ-pP-DcW"/>
                         <outlet property="imageView" destination="hHT-Xp-dv1" id="WP5-1u-6cM"/>
                     </connections>
                 </viewController>
