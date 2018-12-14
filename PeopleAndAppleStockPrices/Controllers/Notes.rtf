@@ -1,0 +1,346 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf100
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red41\green66\blue119;\red255\green252\blue229;\red0\green0\blue0;
+\red180\green69\blue0;\red223\green7\blue0;\red195\green116\blue28;\red71\green106\blue151;}
+{\*\expandedcolortbl;;\csgenericrgb\c16100\c25900\c46700;\csgenericrgb\c100000\c98800\c89800;\csgenericrgb\c0\c0\c0;
+\csgenericrgb\c70600\c27000\c0;\csgenericrgb\c87500\c2700\c0;\csgenericrgb\c76500\c45500\c11000;\csgenericrgb\c27800\c41500\c59300;}
+\margl1440\margr1440\vieww9000\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \
+\
+\
+\
+\pard\tx741\pardeftab741\pardirnatural\partightenfactor0
+
+\f1\fs30 \cf2 \cb3 let\cf4 \cb3  stockPrice1 = \cf5 \cb3 StockPrice\cf4 \cb3 (date: \cf6 \cb3 "2016-10-09"\cf4 \cb3 , open: \cf2 \cb3 145.0\cf4 \cb3 , close: \cf2 \cb3 145.50\cf4 \cb3 )
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf2 \cb3 let\cf4 \cb3  stockPrice2 = \cf5 \cb3 StockPrice\cf4 \cb3 (date: \cf6 \cb3 "2016-10-10"\cf4 \cb3 , open: \cf2 \cb3 145.0\cf4 \cb3 , close: \cf2 \cb3 145.50\cf4 \cb3 )
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf2 \cb3 let\cf4 \cb3  stockPrice3 = \cf5 \cb3 StockPrice\cf4 \cb3 (date: \cf6 \cb3 "2016-11-12"\cf4 \cb3 , open: \cf2 \cb3 145.0\cf4 \cb3 , close: \cf2 \cb3 145.50\cf4 \cb3 )
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf2 \cb3 let\cf4 \cb3  stockPrice4 = \cf5 \cb3 StockPrice\cf4 \cb3 (date: \cf6 \cb3 "2016-11-13"\cf4 \cb3 , open: \cf2 \cb3 145.0\cf4 \cb3 , close: \cf2 \cb3 145.50\cf4 \cb3 )
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf2 \cb3 let\cf4 \cb3  stockPrice5 = \cf5 \cb3 StockPrice\cf4 \cb3 (date: \cf6 \cb3 "2016-12-20"\cf4 \cb3 , open: \cf2 \cb3 145.0\cf4 \cb3 , close: \cf2 \cb3 145.50\cf4 \cb3 )
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf2 \cb3 let\cf4 \cb3  stockPrice6 = \cf5 \cb3 StockPrice\cf4 \cb3 (date: \cf6 \cb3 "2016-12-21"\cf4 \cb3 , open: \cf2 \cb3 145.0\cf4 \cb3 , close: \cf2 \cb3 145.50\cf4 \cb3 )
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf2 \cb3 let\cf4 \cb3  stockPrice7 = \cf5 \cb3 StockPrice\cf4 \cb3 (date: \cf6 \cb3 "2017-01-04"\cf4 \cb3 , open: \cf2 \cb3 145.0\cf4 \cb3 , close: \cf2 \cb3 145.50\cf4 \cb3 )
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf2 \cb3 let\cf4 \cb3  stockPrice8 = \cf5 \cb3 StockPrice\cf4 \cb3 (date: \cf6 \cb3 "2017-01-05"\cf4 \cb3 , open: \cf2 \cb3 145.0\cf4 \cb3 , close: \cf2 \cb3 145.50\cf4 \cb3 )
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf7 //
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf7 //func getDateMonth(dateString: String) -> (month: String, year: String) \{
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf7 //    let components = dateString.components(separatedBy: "-")
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf7 //    stockPrices.append([StockPrice]())
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf7 //    return (components[1], components[0])
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf7 //    
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf7 //\}
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf7 //
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf7 //
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf7 //// 1. get all stocks parsed from the JSON file
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf2 \cb3 let\cf4 \cb3  allPrices = [\cf8 \cb3 stockPrice1\cf4 \cb3 , \cf8 \cb3 stockPrice2\cf4 \cb3 , \cf8 \cb3 stockPrice3\cf4 \cb3 , \cf8 \cb3 stockPrice4\cf4 \cb3 ,
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf4                  \cf8 \cb3 stockPrice5\cf4 \cb3 , \cf8 \cb3 stockPrice6\cf4 \cb3 , \cf8 \cb3 stockPrice7\cf4 \cb3 , \cf8 \cb3 stockPrice8\cf4 \cb3 ]
+\f0\fs24 \cf0 \
+\
+
+\f1\fs30 \cf7 ////// 2. create a 2d array of Stock Prices [[StockPrice]]()
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf7 //var stockPrices = [[StockPrice]]()
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf7 ////
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf7 ////// 3. as you iterate through all stock prices from step 1. put into array buckets
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf7 ////
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf7 ////// 4. create an initial empty array inside 2d array before entering loop from step 3.
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf7 ////stockPrices.append([StockPrice]())
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf7 //
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf7 ////
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf7 ////// create a variable previousData
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf7 //var previousDate = ""
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf7 ////
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf7 ////// create initial start index
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf7 //var startIndex = 0
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf7 //for stockPrice in allPrices \{
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf7 //    let dateMonth = getDateMonth(dateString: stockPrice.date)
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf7 //    let currentDate = dateMonth.month + "-" + dateMonth.year
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf7 //    if previousDate.isEmpty \{ previousDate = dateMonth.month + "-" + dateMonth.year \}
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf7 //
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf7 //    if currentDate != previousDate \{
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf7 //        // new bucket
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf7 //        stockPrices.append([StockPrice]())
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf7 //
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf7 //        // increment startIndex
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf7 //        startIndex += 1
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf7 //    \}
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf7 //    stockPrices[startIndex].append(stockPrice)
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf7 //    previousDate = dateMonth.month + "-" + dateMonth.year
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf7 //\}
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf7 //
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf7 //// keep track of current month, year of stock price
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf7 //// e.g if previous stock price date is (month, year) 10, 2016
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf7 //// and current stock price is (month, year) 11, 2016
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf7 //// then append a new array to your 2d array
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf7 //// increment the start index of the 2d array
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf7 //
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf7 //// at this point you should have your 2d array of Stock Prices
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf7 //print(stockPrices.count)
+\f0\fs24 \cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \cb1 \
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\pard\tx741\pardeftab741\pardirnatural\partightenfactor0
+
+\f1\fs30 \cf4 \cb3  \cf2 \cb3 private\cf4 \cb3  \cf2 \cb3 func\cf4 \cb3  makeSelections() -> [[\cf5 \cb3 StockPrice\cf4 \cb3 ]] \{
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf4         \cf2 \cb3 var\cf4 \cb3  stockPriceSections = [[\cf5 \cb3 StockPrice\cf4 \cb3 ]]()
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf4     
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf4         \cf2 \cb3 let\cf4 \cb3  stocks = \cf8 \cb3 loadData\cf4 \cb3 ()
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf4             stockPriceSections.\cf8 \cb3 append\cf4 \cb3 ([\cf5 \cb3 StockPrice\cf4 \cb3 ]())
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf4             \cf2 \cb3 var\cf4 \cb3  startIndex = \cf2 \cb3 0
+\f0\fs24 \cf0 \cb3 \
+
+\f1\fs30 \cf4             \cf2 \cb3 var\cf4 \cb3  date = (month: \cf6 \cb3 "12"\cf4 \cb3 , year: \cf6 \cb3 "2016"\cf4 \cb3 )
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf4         
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf4         \cf2 \cb3 func\cf4 \cb3  getDateMonth(dateString: \cf5 \cb3 String\cf4 \cb3 ) -> (month: \cf5 \cb3 String\cf4 \cb3 , year: \cf5 \cb3 String\cf4 \cb3 ) \{
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf4             \cf2 \cb3 let\cf4 \cb3  components = dateString.\cf8 \cb3 components\cf4 \cb3 (separatedBy: \cf6 \cb3 "-"\cf4 \cb3 )
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf4             stockPriceSections.\cf8 \cb3 append\cf4 \cb3 ([\cf5 \cb3 StockPrice\cf4 \cb3 ]())
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf4             \cf2 \cb3 return\cf4 \cb3  (components[\cf2 \cb3 1\cf4 \cb3 ], components[\cf2 \cb3 0\cf4 \cb3 ])
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf4         \}
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf4     
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf4         \cf2 \cb3 for\cf4 \cb3  stockPrice \cf2 \cb3 in\cf4 \cb3  \cf8 \cb3 allPrices\cf4 \cb3  \{
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf4                         \cf2 \cb3 let\cf4 \cb3  dateMonth = \cf8 \cb3 getDateMonth\cf4 \cb3 (dateString: stockPrice.\cf8 \cb3 date\cf4 \cb3 )
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf4                         \cf2 \cb3 let\cf4 \cb3  currentDate = dateMonth.month + \cf6 \cb3 "-"\cf4 \cb3  + dateMonth.year
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf4                         \cf2 \cb3 if\cf4 \cb3  \cf8 \cb3 previousDate\cf4 \cb3 .\cf8 \cb3 isEmpty\cf4 \cb3  \{ \cf8 \cb3 previousDate\cf4 \cb3  = dateMonth.month + \cf6 \cb3 "-"\cf4 \cb3  + dateMonth.year \}
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf4             
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf4             
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf4             \cf2 \cb3 for\cf4 \cb3  stockPrice \cf2 \cb3 in\cf4 \cb3  stocks \{
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf4                 
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf4                 \cf2 \cb3 if\cf4 \cb3  date != getMonthYear(dateString: stockPrice.date)\{
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf4                     date = getMonthYear(dateString: stockPrice.date)
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf4                     stockPrice.append([\cf5 \cb3 StockPrice\cf4 \cb3 ]())
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf4                     startIndex += \cf2 \cb3 1
+\f0\fs24 \cf0 \cb3 \
+
+\f1\fs30 \cf4                     
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf4                 \}
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf4                 stockPrice[startIndex].append(stockPrice)
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf4             \}
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf4              \cf2 \cb3 return\cf4 \cb3  stockPriceSections
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf4         \}
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf4         \cf7 //2017-19-01 -> [2017,19,01] -> (12,2017)
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf4         
+\f0\fs24 \cf0 \cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx741\pardeftab741\pardirnatural\partightenfactor0
+
+\f1\fs30 \cf7 \cb3 /        \}
+\f0\fs24 \cf0 \
+\
+
+\f1\fs30 \cf7 //
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf7 //            if currentDate != previousDate \{
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf7 //                // new bucket
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf7 //                stockPrices.append([StockPrice]())
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf7 //
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf7 //                // increment startIndex
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf7 //                startIndex += 1
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf7 //            \}
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf7 //            stockPrices[startIndex].append(stockPrice)
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf7 //            previousDate = dateMonth.month + "-" + dateMonth.year
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf7 //        \}
+\f0\fs24 \cf0 \
+
+\f1\fs30 \cf4         }

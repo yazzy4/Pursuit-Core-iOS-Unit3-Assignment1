@@ -20,7 +20,7 @@ class PeopleDetailController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
-       
+        
     }
    
     private func updateUI() {

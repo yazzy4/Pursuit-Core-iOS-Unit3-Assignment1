@@ -26,8 +26,10 @@ struct Person: Codable {
         var city: String
         var state: String
     }
+    
     struct UserImage: Codable{
         var large: String
+        var thumbnail: String
     }
 
     

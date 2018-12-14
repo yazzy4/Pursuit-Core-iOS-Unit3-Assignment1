@@ -36,8 +36,9 @@ class PeopleViewController: UIViewController {
             if let data = try? Data.init(contentsOf: peopleURL) {
                 do {
                     let outerLayer = try JSONDecoder().decode(Person.UserInfo.self, from: data)
-                    self.users = outerLayer.results
-                    self.searchUsers = outerLayer.results
+                        self.users = outerLayer.results
+                        self.searchUsers = outerLayer.results
+                    
                 } catch {
                     print("type: \(error)")
                 }
@@ -48,6 +49,9 @@ class PeopleViewController: UIViewController {
 
 extension PeopleViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        
+        
         return searchUsers.count
     }
     
@@ -56,6 +60,15 @@ extension PeopleViewController: UITableViewDataSource {
         let personToSet = searchUsers[indexPath.row]
         cell.textLabel?.text = personToSet.name.fullName
         cell.detailTextLabel?.text = personToSet.location.city.uppercased()
+        guard let image = URL.init(string: personToSet.picture.thumbnail) else {
+            return UITableViewCell()
+        }
+        do {
+            let data = try Data.init(contentsOf: image)
+            cell.imageView?.image = UIImage.init(data: data)
+        } catch {
+            print("image not found")
+        }
         return cell
     }
     

@@ -128,13 +128,51 @@
                     <view key="view" contentMode="scaleToFill" id="WcC-Bq-2a4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YLH-Hf-P8Q">
+                                <rect key="frame" x="0.0" y="174.5" width="375" height="333.5"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AcR-Ad-PMA">
+                                <rect key="frame" x="27" y="546" width="104" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="925-7o-iVs">
+                                <rect key="frame" x="255" y="546" width="104" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wf1-YF-XPQ">
+                                <rect key="frame" x="16" y="104" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="YLH-Hf-P8Q" firstAttribute="centerX" secondItem="lAj-9i-2MZ" secondAttribute="centerX" id="Bfv-Q6-eA2"/>
+                            <constraint firstItem="YLH-Hf-P8Q" firstAttribute="centerY" secondItem="lAj-9i-2MZ" secondAttribute="centerY" id="VWy-FV-t7T"/>
+                            <constraint firstItem="YLH-Hf-P8Q" firstAttribute="height" secondItem="WcC-Bq-2a4" secondAttribute="height" multiplier="0.5" id="b9h-vZ-8dP"/>
+                            <constraint firstItem="YLH-Hf-P8Q" firstAttribute="width" secondItem="WcC-Bq-2a4" secondAttribute="width" id="hre-Yj-f43"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="lAj-9i-2MZ"/>
                     </view>
+                    <connections>
+                        <outlet property="dateLabel" destination="Wf1-YF-XPQ" id="tCa-1a-IS4"/>
+                        <outlet property="stockClose" destination="925-7o-iVs" id="sv1-wz-W4J"/>
+                        <outlet property="stockImage" destination="YLH-Hf-P8Q" id="uUy-Mc-9DT"/>
+                        <outlet property="stockOpen" destination="AcR-Ad-PMA" id="RFL-jQ-8R1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yxw-lX-adf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3614" y="484"/>
+            <point key="canvasLocation" x="3613.5999999999999" y="483.50824587706148"/>
         </scene>
         <!--Item-->
         <scene sceneID="NhG-kg-Zzf">

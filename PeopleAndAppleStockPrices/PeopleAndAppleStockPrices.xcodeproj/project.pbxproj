@@ -14,6 +14,7 @@
 		577E5BF621BA8BA20083EB97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 577E5BF421BA8BA20083EB97 /* LaunchScreen.storyboard */; };
 		577E5BFF21BA8C3B0083EB97 /* userinfo.json in Resources */ = {isa = PBXBuildFile; fileRef = 577E5BFE21BA8C3B0083EB97 /* userinfo.json */; };
 		577E5C0121BA8C5C0083EB97 /* applstockinfo.json in Resources */ = {isa = PBXBuildFile; fileRef = 577E5C0021BA8C5C0083EB97 /* applstockinfo.json */; };
+		9101106B21C307B400E9D9CF /* Notes.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 9101106A21C307B400E9D9CF /* Notes.rtf */; };
 		913EA2EB21BB262D006382E0 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913EA2EA21BB262D006382E0 /* People.swift */; };
 		913EA2ED21BB2641006382E0 /* StockPrices .swift in Sources */ = {isa = PBXBuildFile; fileRef = 913EA2EC21BB2641006382E0 /* StockPrices .swift */; };
 		913EA2F121BB2C9B006382E0 /* PeopleDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913EA2F021BB2C9B006382E0 /* PeopleDetailController.swift */; };
@@ -31,6 +32,7 @@
 		577E5BF721BA8BA20083EB97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		577E5BFE21BA8C3B0083EB97 /* userinfo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = userinfo.json; sourceTree = "<group>"; };
 		577E5C0021BA8C5C0083EB97 /* applstockinfo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = applstockinfo.json; sourceTree = "<group>"; };
+		9101106A21C307B400E9D9CF /* Notes.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Notes.rtf; sourceTree = "<group>"; };
 		913EA2EA21BB262D006382E0 /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
 		913EA2EC21BB2641006382E0 /* StockPrices .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StockPrices .swift"; sourceTree = "<group>"; };
 		913EA2F021BB2C9B006382E0 /* PeopleDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleDetailController.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				913EA2F021BB2C9B006382E0 /* PeopleDetailController.swift */,
 				577E5BEF21BA8BA10083EB97 /* Main.storyboard */,
 				913EA2F421BB2D00006382E0 /* StockViewController.swift */,
+				9101106A21C307B400E9D9CF /* Notes.rtf */,
 				913EA2F221BB2CDE006382E0 /* StockDetailController.swift */,
 			);
 			path = Controllers;
@@ -179,6 +182,7 @@
 				577E5C0121BA8C5C0083EB97 /* applstockinfo.json in Resources */,
 				577E5BF621BA8BA20083EB97 /* LaunchScreen.storyboard in Resources */,
 				577E5BF321BA8BA20083EB97 /* Assets.xcassets in Resources */,
+				9101106B21C307B400E9D9CF /* Notes.rtf in Resources */,
 				577E5BF121BA8BA10083EB97 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
